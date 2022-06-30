@@ -1,0 +1,19 @@
+movie_namw.db;
+CREATE TABLE `movie_name` (
+  `id` int(100) NOT NULL,
+  `movie` varchar(100) NOT NULL,
+  `actor` varchar(100) NOT NULL,
+  `actress` varchar(100) NOT NULL,
+  `year_of_release` int(50) NOT NULL,
+  `director` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `movie_name` (`id`, `movie`, `actor`, `actress`, `year_of_release`, `director`) VALUES
+(1, 'soorari potru', 'surya', 'aaprna', 2021, 'kongara'),
+(2, 'mankatha', 'ajith', 'trisha', 2014, 'venkatprabhu'),
+(3, 'Master', 'Vijay', 'Malavika Mohan', 2021, 'Lokesh Kanagaraj'),
+(4, 'Ghilli', 'Vijay', 'Trisha', 2004, 'Dharani');
+
+ALTER TABLE `movie_name`
+  ADD PRIMARY KEY (`id`);
+COMMIT;
