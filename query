@@ -1,0 +1,2 @@
+SELECT * FROM movies;
+SELECT movie FROM movies WHERE actor='ajith';
